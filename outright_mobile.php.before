@@ -1,0 +1,2027 @@
+<head>
+
+<style>
+
+body{
+
+  font-family:"Calibri, sans-serif";
+
+}
+
+
+
+    .content{
+
+    width:580px;
+
+     }
+
+    #flexbox{
+
+    display: flex;
+
+    /*background:purple;*/
+
+    flex-wrap:wrap;
+
+
+
+    }
+
+    .bluelink{
+
+      padding-top: 10px;
+
+      margin-top: 5px;
+
+      background-color: #69A8E3;
+
+      width: 100%;    
+
+      padding-bottom:10px;      
+
+      bottom:3px;
+
+    }
+
+    .lilbox .bluelink{
+
+      position:absolute;
+
+      width:calc(100% - 20px);
+
+    }
+
+
+
+    .bluelink:hover{
+
+      background-color: orange;
+
+    }
+
+    .lilbox{
+
+      display:flex;
+
+      flex-direction: column;
+
+      background: #fff;
+
+      padding:10px;
+
+      position:relative;
+
+      /* width:170px;
+
+      height:375px; */
+
+      margin:5px;
+
+      border:1px solid #eee;
+
+      border-radius:3px;
+
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+      padding-bottom:45px;
+
+    }
+
+    .outrightHeading{
+
+      display: flex;
+
+      flex-direction: row;
+
+      align-items: center;
+
+      vertical-align: middle;
+
+    /*height: 60px;/*/
+
+       text-align: left; 
+
+      background-color: #012d58;
+
+      padding: 10px;
+
+      font-family: Roboto, Verdana, Arial, Helvetica, sans-serif;
+
+      color: white;
+
+      font-weight: bold;
+
+      font-size: 24px;
+
+      margin-top: 5px;
+
+    }
+
+
+
+    .card-body{
+
+      display:grid;
+
+      grid-template-columns:repeat( auto-fit, minmax(170px, 1fr) );
+
+      grid-template-rows:repeat(auto-fit, minmax(375px,1fr));
+
+      /* flex-direction: row;
+
+      flex-wrap: wrap;
+
+      width: 600px; */
+
+    }
+
+    .card{
+
+      width:100%;
+
+    }
+
+    h3{font-size:1.25rem;}
+
+    .h3, h3{
+
+  font-size:1.25rem!important;
+
+}
+
+    #accordionExample{
+
+      width:100%;
+
+    }
+
+    .card-body:nth-child(3n) {
+
+  page-break-after: always; /* CSS 2.1 syntax */
+
+  break-after: always; /* New syntax */
+
+}
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div class="content">
+
+<div class="outrightHeading"> 
+
+  <div style="display:flex;float:left;width:40%;">technologica Unlocked Mobiles<br> </div>
+
+  <div style="flex-grow:2;"></div>
+
+  <div style="display:flex;overflow: hidden;float:right;width:40%;">
+
+<img src=http://www.technologica.com.au/outrightphones/images/freedom.png style='height:100px;'>
+
+</div>
+
+</div>
+
+</div>
+
+<div style="padding:10px;font-size:14px;text-align:left;margin:8px;">
+
+
+
+
+
+   From cheap and cheerful basic handsets, up to state-of-the-art smartphones, technologica's OUTRIGHT UNLOCKED phone range offers the latest models from leading manufacturers... all without a locked-in link to any network!
+
+      <br />
+
+      </div>
+
+      <div class="bluelink"><a href="http://www.technologica.com.au/orderforms/order_forms/PPOF_UNL_STD.pdf" target="_blank" style="color:white;font-weight:700;text-decoration:none;font-size:1.5em;">Click here to view our Outright Phones Order Form</a></div>
+
+      <br>
+
+      <div id="flexbox">
+
+    
+
+<div class="accordion" id="accordionExample">
+
+<h5>Click on brand name to open/close phone list</h5>
+
+
+
+  <div class="card collapsed"  data-target="#collapseNokia" aria-expanded="false" aria-controls="collapseNokia">
+
+    <div class="card-header" id="headingNokia">
+
+      <h5 class="mb-0">
+
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNokia" aria-expanded="true" aria-controls="collapseNokia">
+
+          Nokia
+
+        </button>
+
+      </h5>
+
+    </div>
+
+<!-- Nokia c10plus-->
+
+  <div id="collapseNokia" class="collapse" aria-labelledby="headingNokia" data-parent="#accordionExample">
+
+       <div class="card-body">
+
+       <div class="lilbox"><div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/c10plus.jpg"> 
+
+</div> <br><h3>Nokia C01 Plus </h3><div style="text-align:left;">
+
+          <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $141.90 inc gst <br></span>
+
+          RRP: $159 <br>
+
+          <br> Colours: Colors: Purple <br>
+
+ </div> 
+
+      <a href="http://www.technologica.com.au/outrightphones/specsheets/2302 Nokia CO1 Plus Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+          <div class="bluelink" style="">Download Spec Sheet</div></a></div>
+
+<!-- Nokia C21 Plus-->    
+<div class="lilbox"><div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/c21plus.jpg"> 
+ 
+   </div> <br><h3>Nokia C21 Plus </h3><div style="text-align:left;">
+
+          <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $204.38 inc gst  <br></span>
+
+          RRP: $229  <br>
+
+          <br> Colours: Colors: Dark Cyan / Warm Grey <br>
+
+    </div> 
+
+      <a href="http://www.technologica.com.au/outrightphones/specsheets/2302 Nokia C21 Plus Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+          <div class="bluelink" style="">Download Spec Sheet</div></a></div>
+
+<!-- Nokia C12 -->    
+<div class="lilbox"><div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/C12.png"> 
+ 
+   </div> <br><h3>Nokia C12 </h3><div style="text-align:left;">
+
+          <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $167.15 inc gst  <br></span>
+
+          RRP: $199 <br>
+
+          <br> Colours: Colors: Cyan / Charcoal / Mint <br>
+
+    </div> 
+
+      <a href="http://www.technologica.com.au/outrightphones/specsheets/2305 Nokia C12 Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+          <div class="bluelink" style="">Download Spec Sheet</div></a></div>
+
+<!-- Nokia G22 -->    
+<div class="lilbox"><div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/G22.png"> 
+ 
+   </div> <br><h3>Nokia G22 </h3><div style="text-align:left;">
+
+          <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $311.12 inc gst  <br></span>
+
+          RRP: $349  <br>
+
+          <br> Colours: Colors: Blue <br>
+
+    </div> 
+
+      <a href="http://www.technologica.com.au/outrightphones/specsheets/2305 Nokia G22 Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+          <div class="bluelink" style="">Download Spec Sheet</div></a></div>
+
+ <!-- Nokia 105  -->    
+<div class="lilbox"><div style=height:170px;>
+
+<img style="height:100%;width:auto;" 
+
+src="http://www.technologica.com.au/outrightphones/images/nokia105.png"> 
+
+</div> <br><h3>Nokia 105 </h3><div style="text-align:left;">
+
+<span style="font-size:1.25em;font-weight:bold;">
+
+<!--Our Price: $311.12 inc gst  <br></span>
+
+RRP: $349  <br>
+
+<br> Colours: Colors: Blue <br> -->
+
+</div> 
+
+<a href="http://www.technologica.com.au/outrightphones/specsheets/2312 Nokia 105 Spec Sheet fold to A5.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+<div class="bluelink" style="">Download Spec Sheet</div></a></div>         
+
+<!--
+<div class="lilbox">
+
+   <div style=height:170px;>
+
+   <img style="height:100%;width:auto;" src="http://www.technologica.com.au/outrightphones/images/Nokiag11plus.jpg">
+
+  </div>
+
+<!-- <img src="https://via.placeholder.com/170x180.png?text=Coming+Soon" 
+
+
+<br><h3>Nokia G11+ </h3>
+
+
+
+<div style="text-align:left;">
+
+<span style="font-size:1.25em;font-weight:bold;">Our Price: $183.20 inc gst 
+
+<br>
+
+
+
+</span>
+
+<br> Colours: Blue <br>
+
+<br>
+
+</div>
+
+ <a href="http://www.technologica.com.au/outrightphones/specsheets/Nokia G11 plus TPP specs.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+ <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+</div>   
+-->
+
+
+
+
+            
+
+          
+ <!--
+
+
+      <div class="lilbox"><div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/nokia225.jpg"> 
+
+</div> <br><h3>Nokia 225</h3><div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+      Classic "Candybar" Design<br></span>
+
+      4G Connectivity <br>
+
+      Modern twist on a classic
+
+         </div> 
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/nokia225.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+          <div class="bluelink" style="">Download Spec Sheet</div></a></div>
+
+   
+
+      <div class="lilbox"><div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/nokia5.4.jpg"> 
+
+</div> <br><h3>Nokia 5.4</h3><div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+  
+
+      Immersive 6.4” Display<br></span>
+
+4G SmartPhone       <br>
+
+Quad AI Camera<br>
+
+4K Video<br>
+
+         </div> 
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/nokia5.4.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+          <div class="bluelink" style="">Download Spec Sheet</div></a-->
+
+    </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <div class="card collapsed"  data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+
+    <div class="card-header" id="headingOne">
+
+      <h5 class="mb-0">
+
+      <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+
+          Samsung
+
+        </button>
+
+      </h5>
+
+    </div>
+
+    
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+
+     <div class="card-body">
+
+ <!--    
+
+     <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/A23.jpg"> 
+
+          </div> 
+
+      <br><h3>Galaxy A23</h3><div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $353.32<br></span>
+
+          RRP: $399 <br>
+
+          Colour: Black<br>
+
+          128GB 6.6" Infinity V Display
+
+         </div> 
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/A23.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+      </div>
+
+
+
+ <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/A13.jpg"> 
+
+          </div> 
+
+      <br><h3>Galaxy A13</h3><div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $291.61<br></span>
+
+          RRP: $299 <br>
+
+          Colour: Black/Peach<br>
+
+          128GB 6.6" Infinity V Display
+
+         </div> 
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/A13.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+      </div>
+
+  -->    
+<!--
+   <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/A33.jpg"> 
+
+          </div> 
+
+      <br><h3>Galaxy A33 5G</h3><div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $529.98<br></span>
+
+          RRP: $599 <br>
+
+          Colour: Black/Blue<br>
+
+          128GB 6.4" Infinity U FHD
+
+         </div> 
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/A33.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+      </div>    
+
+   
+
+      <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/A53.jpg"> 
+
+          </div> 
+
+      <br><h3>Galaxy A53 5G</h3><div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $619.52<br></span>
+
+          RRP: $699 <br>
+
+          Colour: Black/Blue<br>
+
+          128GB 6.4" Infinity O FHD
+
+         </div> 
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/A53.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+      </div>   
+
+
+      <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/A53.jpg"> 
+
+          </div> 
+
+      <br><h3>Galaxy A73 5G</h3><div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $707.85<br></span>
+
+          RRP: $799 <br>
+
+          Colour: Grey/Mint<br>
+
+          128GB 6.7" Infinity O FHD
+
+         </div> 
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/A73.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+      </div>    
+
+
+
+
+
+
+
+    <!--div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/a32.png"> 
+
+          </div> 
+
+      <br><h3>Galaxy A32</h3><div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $439.23<br></span>
+
+          RRP: $499 <br>
+
+          Colour: Black/Violet<br>
+
+          128GB / 6.4" Infinity U Display
+
+         </div> 
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/aa32.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+      </div-->
+
+      <!--
+
+      <div class="lilbox">
+
+       <div style=height:170px;>
+
+       <img style="height:100%;width:auto;" src="http://www.technologica.com.au/outrightphones/images/Samsung Galaxy S21FE.png">
+
+       </div>
+
+       <!-- <img src="https://via.placeholder.com/170x180.png?text=Coming+Soon" 
+
+      <br><h3>Galaxy S21 FE 5G</h3>
+
+      <div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">Our Price:  $892.10<br></span>
+
+          RRP: $999 <br>
+
+          Colours: Olive/Graphite/Lavender/White <br>
+
+          128GB memory  <br>
+
+          6.4" Gorilla Glass Screen <br>
+
+      </div>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/S21FE.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+  </div>
+
+ -->               
+
+    <!--div class="lilbox">
+
+        <div style=height:170px;>
+
+        <img style="height:100%;width:auto;" 
+
+        src="http://www.technologica.com.au/outrightphones/images/s21p.png"> 
+
+        </div>
+
+    <br><h3>Galaxy S21+</h3>
+
+    <div style="text-align:left;">
+
+    <span style="font-size:1.25em;font-weight:bold;">Our Price: <br> 128GB: $1349.06<br> 256GB: $1538.46<br><br></span>
+
+        RRP:<br> 128GB: $1446.00<br>
+
+        256GB: $1649.00 <br> <br>
+
+        Colour:<br> Silver/Violet/Black<br>
+
+     
+
+    </div> 
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/S21_Plus.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+    </div-->
+
+ <!--   
+
+      <div class="lilbox">
+
+       <div style=height:170px;>
+
+       <img style="height:100%;width:auto;" src="http://www.technologica.com.au/outrightphones/images/SamGal S22.jpg">
+
+       </div>
+
+       <!-- <img src="https://via.placeholder.com/170x180.png?text=Coming+Soon" 
+
+      <br><h3>Galaxy S22</h3>
+
+      
+
+      <div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">Our Price:<br> 128GB : $1077.62<br>
+
+      256GB : $1117.17 <br>
+
+      </span>
+
+          <br>RRP:<br>128GB: $1149.00 <br> 256GB: $1249.00 <br>
+
+          <br>Colours: Black/White/Blush/Green <br>
+
+          6.8" Infinity-O Quad HD+ Screen <br>
+
+      </div>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/Samsung S22.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+  </div>
+-->
+  
+<!-- 
+   <div class="lilbox">
+
+       <div style=height:170px;>
+
+       <img style="height:100%;width:auto;" src="http://www.technologica.com.au/outrightphones/images/SamGal S22+.jpg">
+
+       </div>
+
+       <!-- <img src="https://via.placeholder.com/170x180.png?text=Coming+Soon" --- 
+
+      <br><h3>Galaxy S22+</h3>
+
+      
+
+      <div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">Our Price:<br> 128GB : $1454.15<br>
+
+      256GB : $1546.55 <br>
+
+      </span>
+
+          <br>RRP:<br>128GB: $1549.00 <br> 256GB: $1649.00 <br>
+
+          <br>Colours: Black/White/Blush/Green <br>
+
+          6.6" Infinity-O FHD+ Screen <br>
+
+      </div>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/Samsung S22+.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+  </div>
+
+                
+
+    <div class="lilbox">
+
+       <div style=height:170px;>
+
+       <img style="height:100%;width:auto;" src="http://www.technologica.com.au/outrightphones/images/SamGal S22 Ultra.jpg">
+
+       </div>
+
+       <!-- <img src="https://via.placeholder.com/170x180.png?text=Coming+Soon"
+
+      <br><h3>Galaxy S22 Ultra</h3>
+
+      
+
+      <div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">Our Price:<br> 128GB : $1687.46<br>
+
+      256GB : $1828.37 <br>
+
+      512GB : $2015.48 <br>
+      
+      <br>
+
+      </span>
+
+          <br>RRP:<br>128GB: $1799.00 <br> 256GB: $1949.00 <br> 512GB: $2149.00 <br>
+
+          <br>Colours: Black/White/Burgundy/<br>Green <br>
+
+           6.8" Infinity-O Quad HD+ Screen <br>
+
+      </div>
+
+      <br>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/Samsung S22 Ultra.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+  </div>
+
+-->
+
+  <div class="lilbox">
+
+       <div style=height:170px;>
+
+       <img style="height:100%;width:auto;" src="http://www.technologica.com.au/outrightphones/images/SamGalS23.jpg">
+
+       </div>
+
+       <!-- <img src="https://via.placeholder.com/170x180.png?text=Coming+Soon"--> 
+
+      <br><h3>Galaxy S23/S23+ </h3>
+
+      
+
+      <div style="text-align:left;">
+
+       <div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">Our Price:
+      
+      <br>S23+ 256gb: $1,546.55<br>
+
+      S23+ 512gb: $1,7234.81<br>
+
+      S23 128 gb: $1,265.88<br>
+
+      S23 256 gb: $1,359.44<br>
+
+      </span>
+
+      <br>
+          <br> Colours: Lavender / Cream / Green / Black  <br>
+
+            <br>
+
+      </div>
+
+          
+
+      </div>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/SamsungGalaxy S23-S23+ Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+  </div>             
+
+  <div class="lilbox">
+
+       <div style=height:170px;>
+
+       <img style="height:100%;width:auto;" src="http://www.technologica.com.au/outrightphones/images/SamGalS23ultra.jpg">
+
+       </div>
+
+       <!-- <img src="https://via.placeholder.com/170x180.png?text=Coming+Soon"--> 
+
+      <br><h3>Galaxy S23 Ultra </h3>
+
+      
+
+      <div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">Our Price:
+      
+      <br>S23 Ultra 256gb: $1,828.37<br>
+
+      S23 Ultra 512gb: $2,109.03<br>
+
+      S23 Ultra 1TB: $2,484.41 <br>
+
+      S23 256 gb: $1,359.44<br>
+
+      </span>
+
+      <br> Colours: Lavender / Cream / Green /Black   <br>
+
+<br>
+
+      </div>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/2302 Samsung Galaxy S23 Ultra Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+  </div>             
+    
+ 
+  <div class="lilbox">
+
+       <div style=height:170px;>
+
+       <img style="height:100%;width:auto;" src="http://www.technologica.com.au/outrightphones/images/GalaxyA04.jpg">
+
+       </div>
+
+       <!-- <img src="https://via.placeholder.com/170x180.png?text=Coming+Soon"--> 
+
+      <br><h3>Galaxy A04 </h3>
+
+      
+
+      <div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">Our Price: $291.61 inc gst
+      
+      <br>
+
+
+      </span>
+
+      <br> Colours: Black / Copper   <br>
+
+<br>
+
+      </div>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/2303 Samsung A04 spec sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+  </div>          
+<!--
+  <div class="lilbox">
+
+<div style=height:170px;>
+
+<img style="height:100%;width:auto;" src="http://www.technologica.com.au/outrightphones/images/Galaxya145g.jpg">
+
+</div>
+
+<!-- <img src="https://via.placeholder.com/170x180.png?text=Coming+Soon"--> 
+<!--
+<br><h3>Galaxy A14 5G </h3>
+
+
+
+<div style="text-align:left;">
+
+<span style="font-size:1.25em;font-weight:bold;">Our Price: $ 335.17 inc gst
+
+<br><br>
+
+
+
+</span>
+
+<br> Colours: Black    <br>
+
+<br>
+
+</div>
+
+ <a href="http://www.technologica.com.au/outrightphones/specsheets/2303 Samsung A14 5G spec sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+ <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+</div>        
+
+-->    
+
+    
+
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!--
+
+ <div class="card collapsed"  data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+
+    <div class="card-header" id="headingOne">
+
+      <h5 class="mb-0">
+
+      <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+
+          Samsung
+
+        </button>
+
+      </h5>
+
+    </div>
+
+    
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+
+
+
+
+
+-->
+
+
+
+  <div class="card collapsed"  data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+
+    <div class="card-header" id="headingOne">
+
+        <!--div class="card" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" -->
+
+    <!--div class="card-header" id="headingFour"-->
+
+      <h5 class="mb-0">
+
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+
+          Oppo
+
+        </button>
+
+      </h5>
+
+    </div>  
+
+
+
+    <div id="collapseFour"  class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+
+      <div class="card-body">
+
+      <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/A16s.jpg"> 
+
+          </div> 
+
+      <br><h3>OPPO A16s</h3><div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $248.69<br></span>
+
+          RRP: $269 <br>
+
+          Colour:Cystal black / Pearl Blue<br>
+
+          6.5" HD+ Screen <br>
+
+          64GB Memory
+
+         </div> 
+
+                <a href="http://www.technologica.com.au/outrightphones/specsheets/A16s.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+      </div>
+
+      
+
+     
+
+      
+
+      <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/A54.jpg"> 
+
+          </div> 
+
+      <br><h3>OPPO A54 5G</h3><div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $322.65<br></span>
+
+          RRP: $349 <br>
+
+          Colour:Fluid black / Fantastic Blue<br>
+
+          6.5" FHD+ Screen <br>
+
+          64GB Memory
+
+         </div> 
+
+        <!--a href="http://www.technologica.com.au/outrightphones/specsheets/Oppo_A54s.pdf" style="color:white;font-weight:700;text-decoration:none;"-->
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/Oppo_A54.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+      </div>
+
+<!--  OppoA54s -->
+ 
+      <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/oppoa54s.jpg"> 
+
+          </div> 
+
+      <br><h3>OPPO A54S</h3><div style="text-align:left;">
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+         <!-- Our Price: $322.65<br></span>
+
+          RRP: $349 <br>
+
+          Colour:Fluid black / Fantastic Blue<br>
+
+          6.5" FHD+ Screen <br>
+
+          64GB Memory -->
+
+         </div> 
+
+        <!--a href="http://www.technologica.com.au/outrightphones/specsheets/Oppo_A54s.pdf" style="color:white;font-weight:700;text-decoration:none;"-->
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/2202 Oppo A54s Spec Sheet fold to A5.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a>
+
+      </div>     
+
+      
+
+      
+<!--
+      <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/A74 5G Black.jpg"> 
+
+          </div> 
+
+      <br><h3>OPPO A74 5G</h3><div style="text-align:left;"> <BR>
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $368.88<br></span>
+
+          RRP: $399 <br>
+
+          Colour:Fluid Black /Space Silver<br>
+
+          6.5" FHD+ Screen <br>
+
+          128GB Memory
+
+         </div> 
+
+         <a href="http://www.technologica.com.au/outrightphones/specsheets/A74.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a></DIV>
+      -->
+       
+
+        <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/A96 Black.jpg"> 
+
+          </div> 
+
+      <br><h3>OPPO A96 </h3><div style="text-align:left;"> <br>
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $368.88<br></span>
+
+          RRP: $399 <br>
+
+          Colour:Starry Black/ Sunset Blue<br>
+
+          6.6" FHD+ Screen <br>
+
+          128GB Memory
+
+         </div> 
+
+       
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/A96.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a></div>
+
+       
+
+       
+
+        <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/A76 Blue.jpg"> 
+
+          </div> 
+
+      <br><h3>OPPO A76 </h3><div style="text-align:left;"> <br>
+
+      <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $322.65<br></span>
+
+          RRP: $349 <br>
+
+          Colour:Glowing Black/ Glowing Blue<br>
+
+           6.5" FHD+ Screen  <br>
+
+          128GB Memory
+
+         </div> 
+
+       
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/A76.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a> </div>
+
+       
+
+      <div class="lilbox">
+
+          <div style=height:170px;>
+
+          <img style="height:100%;width:auto;" 
+
+          src="http://www.technologica.com.au/outrightphones/images/oppoa17.jpg"> 
+
+          </div> 
+
+      <br><h3>OPPO A17</h3><div style="text-align:left;"> <br>
+
+       <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $239.45<br></span>
+
+          <br>
+
+          Colour:Black / Blue<br>
+
+            <br>
+
+         </div> 
+
+       
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/2302 Oppo A17 Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+       <div class="bluelink" style="">Download Spec Sheet</div></a> </div>
+
+<!--  Oppo A78 5g -->
+       
+       
+<div class="lilbox">
+
+<div style=height:170px;>
+
+<img style="height:100%;width:auto;" 
+
+src="http://www.technologica.com.au/outrightphones/images/A785GBlack.jpg"> 
+
+</div> 
+
+<br><h3>OPPO A78 5G (EOL) </h3><div style="text-align:left;"> 
+
+<span style="font-size:1.25em;font-weight:bold;">
+Our Price: $331.90.45<br></span>
+
+<br>
+Colour:Black / Blue<br>
+ <br>
+
+  <br>
+
+</div> 
+
+
+
+<a href="http://www.technologica.com.au/outrightphones/specsheets/2308OppoA785GSpecSheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+<div class="bluelink" style="">Download Spec Sheet</div></a> </div>
+
+
+       
+
+       
+
+      </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+ 
+    <div class="card" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+    <div class="card-header" id="headingTwo">
+
+      <h5 class="mb-0">
+
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+          Konka
+
+        </button>
+
+      </h5> 
+
+    </div>
+
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+
+      <div class="card-body">      
+
+<!--
+
+      <div class="lilbox">
+
+      <div style=height:170px;>
+
+      <img style="height:100%;width:auto;"  src="http://www.technologica.com.au/outrightphones/images/konka-sp10.jpg"></div>
+
+<h3>Konka SP10</h3><div style="text-align:left;">
+
+  <span style="font-size:1.25em;font-weight:bold;">Our Price:$88.60<br></span>
+
+          RRP: $99 <br>
+
+          4.95" HD IPS <br>
+
+          5MP Camera <br>
+
+          16GB inbuilt Memory <br>
+
+          DUAL SIM <br>
+
+    
+
+  </div>
+
+
+   <a href="http://www.technologica.com.au/outrightphones/specsheets/Konka SP10.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+<div class="bluelink" style="">Download Spec Sheet</div></a></div>
+
+-->
+
+
+
+        <!-- div class="lilbox">
+
+        <img src="http://www.technologica.com.au/outrightphones/images/se2.jpg">
+
+<h3>Konka SE2</h3><div style="text-align:left;">
+
+  <span style="font-size:1.25em;font-weight:bold;">Our Price:  $177.32<br></span>
+
+          RRP: $199 <br>
+
+          Colour: Black <br>
+
+        4G/3G, 5.5" HD, 8+5MP cams, <br> 16GB
+
+  </div>
+
+   <a href="http://www.technologica.com.au/outrightphones/specsheets/se2.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+<div class="bluelink" style="">Download Spec Sheet</div></a></div -->
+
+
+
+<div class="lilbox">
+
+    <div style=height:170px;>
+
+    <img style="height:100%;width:auto;"  src="http://www.technologica.com.au/outrightphones/images/konkau6.png"> </div>
+
+<h3>Konka U6</h3><div style="text-align:left;">
+
+  <span style="font-size:1.25em;font-weight:bold;">
+
+    Our Price:  $91.64<br></span>
+
+          RRP: $99 <br>
+
+          Colour: Black <br>
+
+          2.3", Big Buttons, Big Font
+
+  <br></div><br>
+
+   <a href="http://www.technologica.com.au/outrightphones/specsheets/konkau6.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+<div class="bluelink" style="">Download Spec Sheet</div></a>
+
+      </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ASPERA    -->
+
+  <div class="card" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+    <div class="card-header" id="headingThree">
+
+      <h5 class="mb-0">
+
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+         Aspera
+
+        </button>
+
+      </h5>
+
+    </div>
+
+     
+
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+
+      <div class="card-body">
+
+          
+<!--vivo
+
+      <div class="lilbox">
+
+      <div style=height:170px;> 
+
+        <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/as6.png> </div>
+
+        <h3>Aspera AS6</h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;"><br>
+
+        Our Price:  131.07</span>
+
+        
+
+        </div><br><br><br>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/as6.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a></div>
+
+-->      
+<!--
+<div class="lilbox">
+
+      <div style=height:170px;> 
+
+        <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/AsperaAs7.jpg> </div>
+
+        <h3>Aspera AS7</h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;"><br>
+
+        $199 RRP   </br>       
+        $175.45 inc </span>
+
+        
+
+        </div><br><br><br>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/2302 Aspera AS7 Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a></div>
+
+-->
+<!-- F46 Flip -->
+
+<div class="lilbox">
+
+      <div style=height:170px;> 
+
+        <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/AsperaF46Flip.jpg> </div>
+
+        <h3>Aspera F46 Flip </h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;"><br>
+
+        $119 RRP   </br>          
+        $79.20 ex  </br>          
+        $87.12 inc </span>
+
+        
+
+        </div><br><br><br>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/2302 Aspera F46 Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a></div>
+
+<!-- Aspera AS9 -->
+
+<div class="lilbox">
+
+      <div style=height:170px;> 
+
+        <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/AsperaAs9.png> </div>
+
+        <h3>Aspera AS9 </h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;"><br>
+
+        <!--$119 RRP -->   </br>          
+        <!--$79.20 ex --> </br>          
+        <!--$87.12 inc --> </span>
+
+        
+
+        </div><br><br><br>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/2312 Aspera AS9 Spec Sheet fold to A5.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a></div>            
+
+<!-- Aspera AS8 -->
+
+<div class="lilbox">
+
+      <div style=height:170px;> 
+
+        <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/AsperaAs8.png> </div>
+
+        <h3>Aspera AS8 </h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;"><br>
+
+        <!--$119 RRP -->   </br>          
+        <!--$79.20 ex --> </br>          
+        <!--$87.12 inc --> </span>
+
+        
+
+        </div><br><br><br>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/2312 Aspera AS8 Spec Sheet fold to A5.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a></div>      
+
+<!--Aspera R40 Rugged-->
+
+<div class="lilbox">
+
+<div style=height:170px;> 
+
+  <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/r40rugged.png> </div>
+
+  <h3>Aspera R40 Rugged</h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;"><br>
+
+  <!--$129 RRP   </br>       
+  $108.23 ex </br> 
+  $119.05 inc </span> -->
+
+  
+
+  </div><br><br><br>
+
+  <a href="https://www.technologica.com.au/outrightphones/specsheets/Aspera R40 Rugged Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+  <div class="bluelink" style=""> Spec Sheet </div></a></div>         
+
+<!-- Nitro -->
+
+<div class="lilbox">
+
+      <div style=height:170px;> 
+
+        <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/Nitro.jpg> </div>
+
+        <h3>Aspera Nitro</h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;"><br>
+
+        $129 RRP   </br>       
+        $108.23 ex </br> 
+        $119.05 inc </span>
+
+        
+
+        </div><br><br><br>
+
+        <a href="https://www.technologica.com.au/outrightphones/specsheets/AsperaNitroSpecSheetfoldtoA5.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a></div>        
+
+<div class="lilbox">
+
+<div style=height:170px;> 
+
+  <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/AS5.jpg> </div>
+
+  <h3>Aspera AS5</h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;"><br>
+
+     $99 RRP   </br>       
+  
+     $87.12 inc </span>
+
+  
+
+  </div><br><br><br>
+
+  <a href="https://www.technologica.com.au/outrightphones/specsheets/2307AsperaAS5SpecSheetfoldtoA5.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+  <div class="bluelink" style=""> Spec Sheet </div></a></div>     
+
+   
+
+
+
+
+<!--
+     <div class="lilbox">
+
+      <div style=height:170px;> 
+
+        <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/R40.jpg> </div>
+
+        <h3>Aspera R40 Rugged</h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;">
+
+        Our Price:  $113.52<br></span>
+
+        </div>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/R40.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a></div>
+
+
+
+
+
+      <div class="lilbox">
+
+      <div style=height:170px;> 
+
+        <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/R9.png> </div>
+
+        <h3>Aspera R9 Rugged</h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;">
+
+        Our Price:  $245.63<br></span>
+
+        </div>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/R9.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a></div>        
+
+
+    
+
+       
+
+      <div class="lilbox">
+
+      <div style=height:170px;> 
+
+        <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/f42.jpg> </div>
+
+        <h3>Aspera F42 Flip</h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;">
+
+        Our Price:  $87.12<br></span>
+
+        </div>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/f42.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a></div>        
+
+        
+--> 
+        
+
+  <!--div class="lilbox"><img src=http://www.technologica.com.au/outrightphones/images/jazz2.png>
+
+        <h3>Aspera Jazz 2</h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;">
+
+        Our Price: $87.12<br></span>
+
+      </div>
+
+       <a href="http://www.technologica.com.au/outrightphones/specsheets/jazz2.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a> </div-->
+
+
+
+
+
+     </div>
+
+    </div>
+
+  </div>
+
+  
+
+  <!--vivo-->
+
+   <div class="card collapsed"  data-target="#collapsevivo" aria-expanded="true" aria-controls="collapsevivo">
+
+    <div class="card-header" id="headingvivo">
+
+      <h5 class="mb-0">
+
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsevivo" aria-expanded="true" aria-controls="collapsevivo">
+
+        VIVO
+
+        </button>
+
+      </h5>
+
+    </div>
+
+ 
+
+    <div id="collapsevivo" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+
+      <div class="card-body">
+
+      
+
+<!--    
+
+      <div class="lilbox">
+
+      <div style=height:170px;> 
+
+        <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/Y3s.jpg> </div>
+
+        <h3>Vivo Y3s</h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;"><br>
+
+        Our Price:$145.96</span>
+
+        
+
+        </div><br><br><br>
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/Y3s.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a></div>
+
+     </div>
+
+    </div>
+
+  </div>
+
+-->
+
+ <div class="lilbox">
+
+      <div style=height:170px;> 
+
+        <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/Y52s.jpg> </div>
+
+        <h3>Vivo Y52s 5G</h3><div style="text-align:left;"><br>
+
+        <span style="font-size:1.25em;font-weight:bold;">
+
+          Our Price: $305<br></span>
+
+          Colour: Black<br>
+
+          128GB 
+
+         </div> 
+          
+
+      
+
+        <a href="http://www.technologica.com.au/outrightphones/specsheets/2302 Vivo Y52s 5G Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a></div>
+
+
+<!--
+
+<div class="lilbox">
+
+<div style=height:170px;> 
+
+    <img style="height:100%;width:auto;" src=http://www.technologica.com.au/outrightphones/images/vivoY22.jpg> </div>
+
+     <h3>Vivo Y22s </h3><div style="text-align:left;"><br>
+
+     <span style="font-size:1.25em;font-weight:bold;">
+
+    Our Price: $159.20 inc gst <br></span>
+
+
+   
+
+   </div> 
+   
+
+
+
+  <a href="http://www.technologica.com.au/outrightphones/specsheets/Vivo Y22s TPP Spec Sheet.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+  <div class="bluelink" style=""> Spec Sheet </div></a></div>
+
+</div>
+
+-->
+</div>
+
+</div>  
+
+
+
+    <div class="card collapsed"  data-target="#collapseMotorola" aria-expanded="true" aria-controls="collapseMotorola">
+
+    <div class="card-header" id="headingMotorola">
+
+      <h5 class="mb-0">
+
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseMotorola" aria-expanded="true" aria-controls="collapseMotorola">
+
+          Motorola
+
+        </button>
+
+      </h5>
+
+    </div>
+
+
+
+    <div id="collapseMotorola" class="collapse" aria-labelledby="headingMotorola" data-parent="#accordionExample">
+
+      <div class="card-body">
+
+
+
+      </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  
+
+  <div class="card collapsed"  data-target="#collapseAlcatel" aria-expanded="true" aria-controls="collapseAlcatel">
+
+    <div class="card-header" id="headingAlcatel">
+
+      <h5 class="mb-0">
+
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseAlcatel" aria-expanded="true" aria-controls="collapseAlcatel">
+
+          Alcatel
+
+        </button>
+
+      </h5>
+
+    </div>
+
+         <div id="collapseAlcatel" class="collapse" aria-labelledby="headingAlcatel" data-parent="#accordionExample">
+
+      <div class="card-body">
+
+      <div class="lilbox"><img src=http://www.technologica.com.au/outrightphones/images/3t.webp>
+
+        <h3>3T Tablet</h3><div style="text-align:left;"><span style="font-size:1.25em;font-weight:bold;">
+
+        Our Price: $171.65 <br></span>
+
+        Stereo Speakers <br>
+
+      310 Grams<br>
+
+       Value for money<br>
+
+     </div>
+
+       <a href="https://www.technologica.com.au/outrightphones/specsheets/SpecSheet3T210215.pdf" style="color:white;font-weight:700;text-decoration:none;">
+
+        <div class="bluelink" style=""> Spec Sheet </div></a> 
+
+        </div>
+
+        </div>
+
+       </div>
+
+       </div>
+
+
+
+
+
+</div>
+
+ <script>
+
+ $('a[href*="pdf"]').click(function(e) {
+
+     e.preventDefault(); // stop the existing link from firing
+
+     var documentUrl = $(this).attr("href"); // get the url of the pdf
+
+     window.open(documentUrl, '_blank'); // open the pdf in a new window/tab
+
+   });
+
+ </script>
+
+
+
+<!-- JS, Popper.js, and jQuery -->
+
+</body>
+
+</html>
+
